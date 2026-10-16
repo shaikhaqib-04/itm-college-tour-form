@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITM College Tour – Student Interest Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="form-card">
+      <div class="hero">
+        <div class="icon">🎓</div>
+        <p class="eyebrow">ITM COLLEGE</p>
+        <h1>College Tour Interest Form</h1>
+        <p class="subtitle">Tell us if you'd like to join the upcoming college tour.</p>
+      </div>
+      <form id="interestForm">
+        <label for="studentName">1. Student Name <span>*</span></label>
+        <input id="studentName" name="studentName" type="text" placeholder="Enter your full name" maxlength="100" required>
+
+        <label for="courseYear">2. Course &amp; Year <span>*</span></label>
+        <select id="courseYear" name="courseYear" required>
+          <option value="">Select your course and year</option>
+          <option>BBA – First Year</option>
+          <option>BBA – Second Year</option>
+          <option>BBA – Third Year</option>
+          <option>MBA – First Year</option>
+          <option>MBA – Second Year</option>
+        </select>
+
+        <fieldset>
+          <legend>3. Are you interested in joining the college tour? <span>*</span></legend>
+          <label class="choice">
+            <input type="radio" name="interest" value="Yes, I am interested." required>
+            <span class="choice-icon">✅</span>
+            <span><strong>Yes, I am interested.</strong><small>I would like to join the tour.</small></span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="interest" value="No, I am not interested.">
+            <span class="choice-icon">❌</span>
+            <span><strong>No, I am not interested.</strong><small>I will not be joining the tour.</small></span>
+          </label>
+        </fieldset>
+
+        <p class="note">Please submit an honest response so the college can plan the tour arrangements accordingly.</p>
+        <button type="submit" class="submit-btn" id="submitBtn">Submit Response <span>→</span></button>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <footer>ITM College Tour • Student Interest Form</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
