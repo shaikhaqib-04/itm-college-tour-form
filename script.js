@@ -1,5 +1,5 @@
 // Paste your deployed Google Apps Script Web App URL between the quotes below.
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxPxV69eBTAzj9Z9PtDsU07DElKnRsgbGnr472bl8fRDGviEPIwlDXPqyu7IAOhS_Wp/exec";
 
 const form = document.getElementById("interestForm");
 const message = document.getElementById("message");
